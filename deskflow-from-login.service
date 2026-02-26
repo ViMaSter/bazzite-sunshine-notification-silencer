@@ -1,0 +1,15 @@
+[Unit]
+Description=Deskflow client
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+ExecStart=/var/home/ViMaSter/deskflow/build/bin/deskflow-core client
+Restart=on-failure
+RestartSec=5
+StandardOutput=journal
+StandardError=journal
+
+[Install]
+WantedBy=multi-user.target
