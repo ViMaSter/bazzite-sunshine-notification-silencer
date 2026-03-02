@@ -32,7 +32,7 @@ chmod +x deskflow-from-login.sh
 
 sudo cp "$(pwd)/deskflow-from-login.service" /etc/systemd/system/deskflow-from-login.service
 
-sudo chcon -t bin_t $PATH_TO_DESKFLOW/deskflow-core
+sudo chcon -t bin_t $PATH_TO_DESKFLOW$/deskflow-core
 
 sudo systemctl daemon-reload
 
