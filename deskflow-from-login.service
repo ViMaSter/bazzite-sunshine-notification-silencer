@@ -5,7 +5,7 @@ Wants=network-online.target
 
 [Service]
 Type=simple
-ExecStart=/var/home/ViMaSter/deskflow/build/bin/deskflow-core client --uinput
+ExecStart=/opt/deskflow/deskflow-core client --uinput
 Restart=on-failure
 RestartSec=5
 StandardOutput=journal
